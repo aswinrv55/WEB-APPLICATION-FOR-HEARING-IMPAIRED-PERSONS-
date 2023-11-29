@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<!--
+	Moon by GetTemplates.co
+	URL: https://gettemplates.co
+-->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hearing Imapired Assistent</title>
+    <meta name="description" content="Core HTML Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="D:\moon\cursor.html">
+    <link rel="stylesheet" href="D:\moon\cursor.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+    <!-- CSS -->
+    
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<style>
+
+/*
+ * Moon by GetTemplates.co
+ * URL: https://gettemplates.co
+ */
+ * {
+cursor: none;
+}
+
+ html {
+  font-size: 62.5%;
+  overflow-x: hidden; }
+  .box{
+    margin:auto;
+    position:relative;
+    width: 720px;
+    height: 400px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top:-50%;
+    left:-50%;
+    width: 640px;
+    height: 480px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation:animate 6s linear infinite;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top:-50%;
+    left:-50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation:animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform:rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+}
+.form
+{
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #28292d;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.form h2{
+  color:#45f3ff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+body {
+  background-image: url("https://makeitfable.com/wp-content/uploads/2022/02/2022-02-17-Sign-Language.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem; }
+  body:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: .8;
+    z-index: -1;
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    background: linear-gradient(to right, #f5af19, #f12711); }
+
+.boxed-page {
+  margin: 0 auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  position: relative;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 5px; }
+
+@media (min-width: 1200px) {
+  .boxed-page {
+    width: 1024px; }
+    .boxed-page .container {
+      max-width: 1080px;
+      padding-left: 30px;
+      padding-right: 30px; } }
+
+h1 {
+  font-size: 4.8rem; }
+
+h2 {
+  font-size: 3.6rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h4 {
+  font-size: 2.4rem; }
+
+h5 {
+  font-size: 1.8rem; }
+
+h6 {
+  font-size: 1.6rem; }
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1.2em; }
+
+h4,
+h5,
+h6 {
+  line-height: 1.5em;
+  font-weight: 400; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 0; }
+
+p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5em; }
+
+.section-title,
+.section-sub-title {
+  margin-bottom: 30px; }
+
+.btn {
+  font-size: 1.6rem;
+  padding: .7rem 1rem; }
+
+img {
+  max-width: 100%; }
+
+a:focus,
+button:focus {
+  outline: none; }
+
+.btn:hover,
+a:hover {
+  text-decoration: none;
+  color: #d05165; }
+
+.btn-group-lg > .btn, .btn-lg {
+  padding: 1rem; }
+
+.btn-group-sm > .btn, .btn-sm {
+  padding: .5rem; }
+
+.section-content {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.title-wrap,
+.section-title {
+  text-align: center; }
+
+.bg-white {
+  background: transparent; }
+
+.bg-grey {
+  background: transparent; }
+
+.bg-transparent {
+  background: transparent; }
+
+.btn-link {
+  color: #f15e75; }
+  .btn-link:hover {
+    text-decoration: none; }
+
+.color-primary {
+  color: #f15e75; }
+
+/* Colours */
+.text-orange {
+  color: #FDBA51; }
+
+.text-cyan {
+  color: #35B8AD; }
+
+.text-red {
+  color: #FC665F; }
+
+a {
+  color: #f15e75; }
+
+.fs-40 {
+  font-size: 40px; }
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
+  background: transparent;
+  border: .05rem solid #c61717; }
+
+.btn:not(.btn-link):hover {
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px); }
+
+.btn-orange {
+  background-color: #FDBA51 !important;
+  background: transparent;
+  border: none !important; }
+
+.btn-cyan {
+  background-color: #35B8AD !important;
+  background: transparent;
+  border: none !important; }
+
+.btn-red {
+  background-color: #FC665F !important;
+  background: transparent;
+  border: none !important; }
+
+#gtco-header-navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 11;
+  transition: background-color .3s ease-in-out;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
+
+.navbar-brand {
+  font-size: 40px;
+  color: #000; }
+
+.navbar-nav .nav-link {
+  color: #000;
+  transition: .3s ease; }
+
+.navbar-nav:hover li a {
+  opacity: 0.5; }
+  .navbar-nav:hover li a:hover {
+    opacity: 1; }
+
+.navbar-toggler {
+  font-size: 3rem; }
+
+.not-on-top #gtco-header-navbar {
+  position: fixed;
+  max-width: 1024px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: transparent;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 15px 0px;
+  border-radius: 10; }
+
+.jumbotron {
+  background: transparent;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 0;
+  overflow: hidden;
+  min-height: 500px; }
+  @media (min-width: 1024px) {
+    .jumbotron {
+      min-height: 80vh; } }
+  .jumbotron .container {
+    position: relative; }
+  .jumbotron:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: transparent;
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+.filter-button-group {
+  margin-bottom: 15px; }
+  .filter-button-group a {
+    margin: 5px;
+    cursor: pointer; }
+
+.grid-link a {
+  margin: 5px;
+  font-size: 20px;
+  color: #000; }
+
+.grid-portfolio {
+  overflow: hidden; }
+
+.gutter-sizer {
+  width: 2%; }
+
+.grid-sizer,
+.grid-item {
+  width: 32%; }
+
+.grid-item {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden; }
+  .grid-item:hover .grid-info {
+    top: 50%;
+    opacity: 1; }
+
+.grid-item-wrapper:before {
+  content: '';
+  display: block;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all .3s ease;
+  opacity: 0; }
+
+.grid-item-wrapper:hover:before {
+  opacity: 1; }
+
+.grid-info {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease; }
+
+.lightcase-icon-close:before {
+  content: '\e870';
+  font-family: "Linearicons-Free"; }
+
+.grid-title {
+  text-align: center; }
+
+.blog-item {
+  transition: all 0.3s ease-in-out;
+  background: transparent;
+  border-radius: 3px;
+  overflow: hidden; }
+  .blog-item:hover {
+    box-shadow: 0 5px 15px -5px #333;
+    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    transform: translateY(-6px);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15); }
+
+.bg-grey .blog-item {
+  background: transparent;}
+
+.blog-item-wrapper {
+  margin-bottom: 30px; }
+
+.blog-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; }
+
+.blog-title h4 {
+  color: #000; }
+
+.blog-text {
+  padding: 15px; }
+
+.blog-tag {
+  color: #000;
+  letter-spacing: 1.1px;
+  text-transform: uppercase; }
+
+.blog-meta {
+  background: transparent; }
+  .blog-meta p {
+    display: inline-block;
+    font-size: 14px; }
+  .blog-meta a {
+    background: transparent; }
+
+.blog-author {
+  display: inline-block;
+  background: transparent; }
+  .blog-author p {
+    font-size: 14px;
+    margin-bottom: 0; }
+
+.blog-share-wrapper {
+  float: right;
+  display: inline-block;
+  margin: 0 -5px; }
+  .blog-share-wrapper .blog-share {
+    padding: 0 5px;
+    cursor: pointer; }
+
+#gtco-counter {
+  position: relative; }
+
+.counter-item {
+  text-align: center;
+  z-index: 1;
+  color: #0a0000; }
+  .counter-item > i {
+    display: block;
+    font-size: 40px; }
+  .counter-item .number {
+    font-size: 60px;
+    font-weight: 400;
+    display: block; }
+  .counter-item h4 {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 16px; }
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); }
+
+.price-box {
+  border: none; }
+  .price-box .card-header {
+    background-color: transparent; }
+  .price-box small {
+    font-size: 60%; }
+  .price-box .price-box-list {
+    min-height: 150px; }
+
+footer {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.form-control {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  height: 38px;
+  font-weight: 300; }
+  .form-control:focus {
+    border-color: #f15e75;
+    box-shadow: 0 0 0 0.2rem rgba(253, 101, 90, 0.25); }
+
+#gtco-contact-form form label.error {
+  margin-bottom: 15px;
+  color: #f15e75;
+  font-size: 1.4rem; }
+
+.form-control::-webkit-input-placeholder {
+  opacity: .5; }
+
+.form-control::-moz-placeholder {
+  opacity: .5; }
+
+.form-control:-ms-input-placeholder {
+  opacity: .5; }
+
+.form-control::-ms-input-placeholder {
+  opacity: .5; }
+
+.form-control::placeholder {
+  opacity: .5; }
+
+#form-message-warning, #form-message-success {
+  display: none; }
+
+.single-layout .jumbotron:before {
+  background: transparent; }
+
+.blog-content img.float-left {
+  margin: 15px 15px 15px 0; }
+
+.blog-content .img.float-right {
+  margin: 15px 0 15px 15px; }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .boxed-page {
+    margin-right: 30px;
+    margin-left: 30px; }
+  .not-on-top #gtco-header-navbar {
+    margin-right: 30px;
+    margin-left: 30px; } }
+
+@media (max-width: 992px) {
+  #navbar-nav-header .navbar-nav {
+    margin-top: 15px; }
+  #gtco-header-navbar {
+    padding-left: 15px;
+    background-color: #ad1010; } }
+
+@media (max-width: 767px) {
+  .boxed-page {
+    margin: 4rem 15px; }
+  .not-on-top #gtco-header-navbar {
+    margin-right: 15px;
+    margin-left: 15px; }
+  .counter-item {
+    margin-bottom: 40px; }
+    .counter-item:last-child {
+      margin-bottom: 0; }
+  .section-title br,
+  .section-sub-title br {
+    display: none; }
+  .grid-item {
+    width: 100%; }
+  .card-deck {
+    flex-direction: column; } }
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+body {
+  padding: 12px;
+  background: transparent;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+  
+  
+	<div class="boxed-page">
+		<nav id="gtco-header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+        </a>
+        <button type="button" class="btn btn-dark"; onclick="myFunction()">DARK MODE</button>
+        
+        <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+
+        <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="font-family: initial; font-size: 100%;">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="video.html" style="font-family: initial; font-size: 100%;">VIDEO CAPTIONING</a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+    
+</nav>		<div class="jumbotron d-flex align-items-center">
+  <div class="container text-center">
+    <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">HEARING IMPAIRED ASSITENT</h1>
+    <br>
+    <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 150%;">AI-Based Tool to Communicate<br>with the Hearing Impaired People.
+    </p>
+  </div>
+</div>		
+    <div class="container">
+        <div class="section-content">
+            <div class="title-wrap">
+                <h2 style="font-family: fantasy;font-size: 180%;">CALL THIS NUMBER<br>TO COMMUNICATE</h2>
+                <br>
+                <p style="font-family: inherit; font-size: 150%;">+1 313-751-3052</p>
+            </div>
+            <br>
+            <div class="box">
+                <div class="form">
+                    <h2 style="text-align: center; font-family:serif; font-size: 150%;">Transcribe Goes Here</h2>
+                    <P style="color:white";font-size:25px;>hello we have created an web application that helps the hearing impaired people to easily
+communicate with others through a mobile network,We have given a number where people
+who wanted to contact the hearing impaired can call and their speech were converted into text 
+and it displays in the website.</P>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", event => {
+                          webSocket = new WebSocket("ws://localhost:8080");
+                          webSocket.onmessage = function(msg) {
+                            const data = JSON.parse(msg.data);
+                            if (data.event === "interim-transcription") {
+                              document.getElementById("transcription-container").innerHTML =
+                                data.text;
+                            }
+                          };
+                        });
+                      </script>
+                </div>
+                    </div>
+
+
+            <!-- /.row -->
+        </div>
+    </div>
+</section>		<!-- Counter Section -->
+<section id="gtco-counter" class="overlay bg-fixed">
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <!-- Counter Item -->
+                <div class="col-md-3 col-sm-6 counter-item">
+                    
+                    <p style="font-family: unset; font-size: 130%;">DHYAANESH S</p>
+                    <h4>DEVELOPER</h4>
+                </div>
+                <!-- End of Counter Item -->
+                <!-- Counter Item -->
+                <div class="col-md-3 col-sm-6 counter-item">
+
+                  <p style="font-family: unset; font-size: 130%;">AASHISH A S</p>
+                    <h4>CODING</h4>
+                </div>
+                <!-- End of Counter Item -->
+                <!-- Counter Item -->
+                <div class="col-md-3 col-sm-6 counter-item">
+                    
+                    <p style="font-family: unset; font-size: 130%;">DHINESH K</p>
+                    <h4>FRONT END </h4>
+                </div>
+                <!-- End of Counter Item -->
+                <!-- Counter Item -->
+                <div class="col-md-3 col-sm-6 counter-item">
+                  <p style="font-family: unset; font-size: 130%">ASWIN R V</p>
+                    <h4>WEBSITE DEVELOPMENT</h4>
+    </div>
+     <!-- End of Counter Item -->
+                <!-- Counter Item -->
+                <br>
+                <div class="col-md-3 col-sm-6 counter-item">
+                  <p style="font-family: unset;text-align:center; font-size: 130%">SUSIDHARAN N</p>
+                    <h4 style="text-align:center;"> BACK END </h4>
+                </div>
+                 <!-- End of Counter Item -->
+                <!-- Counter Item -->
+                <div class="col-md-3 col-sm-6 counter-item">
+                  <p style="font-family: unset;text-align:center; font-size: 130%">INDHUJA J</p>
+                    <h4 style="text-align:center;">DEVELOPER</h4>
+                  </div>
+                </br>
+                <!-- End of Counter Item -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Counter Section -->		<!-- Features Section-->
+		<section id="gtco-pricing" class="bg-grey">
+
+                    <!-- End of Client Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<center>
+<!-- End of Client Section -->		<footer class="mastfoot mb-3 bg-white py-4 border-top">
+    <div class="inner container">
+         <div class="row">
+         	<div class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center">
+         		<p class="mb-0">"Kindnessisthe language which the deaf can
+              hear and the blind can see".....
+              <br>
+               <a href="https://bitshack.bitsathy.ac.in/" target="_blank">BIT'S HACK'22</a>.</p>
+           
+         	</div>
+           
+            <div class="col-md-6">
+            	<nav class="nav nav-mastfoot justify-content-md-end justify-content-center">
+	                <a class="nav-link" href="https://www.facebook.com/pages/Bannari-Amman-Institute-of-Technology/181446088576330">
+	                	<i class="icon-facebook"></i>
+	                </a>
+	                <a class="nav-link" href="https://twitter.com/Bitsathyindia">
+	                	<i class="icon-twitter"></i>
+	                </a>
+	                <a class="nav-link" href="https://www.instagram.com/lifeatbit/?hl=en">
+	                	<i class="icon-instagram"></i>
+	                </a>
+	                <a class="nav-link" href="https://in.linkedin.com/school/bitsathyindia/?original_referer=https%3A%2F%2Fwww.google.com%2F">
+	                	<i class="icon-linkedin"></i>
+	                </a>
+	                <a class="nav-link" href="https://www.youtube.com/@BITSathyindia">
+	                	<i class="icon-youtube"></i>
+	                </a>
+	            </nav>
+            </div>
+            
+        </div>
+    </div>
+</footer>	</div>
+	
+</div>
+	<!-- External JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/isotope/isotope.min.js"></script>
+	<script src="vendor/lightcase/lightcase.js"></script>
+	<script src="vendor/waypoints/waypoint.min.js"></script>
+	<script src="vendor/countTo/jquery.countTo.js"></script>
+
+	<!-- Main JS -->
+	<script src="js/app.min.js "></script>
+	<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>
